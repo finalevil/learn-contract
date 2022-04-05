@@ -1,3 +1,17 @@
+# Tech Stack
+
+- Hardhat
+  This project start from "Advanced Sample Hardhat Project" by Hardhat
+- Openzeppelin
+  it is opens ource contracts libray.
+  https://github.com/OpenZeppelin/openzeppelin-contracts
+- Alchemy
+  Help you deploy the contract to blockchin
+- ESlint
+  Handle your coding style for javascript and solidity.
+- prettier
+  Format your code in vscode editor, enjoy coding
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
@@ -40,4 +54,3 @@ Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_
 ```shell
 npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
 ```
-# learn-contract
