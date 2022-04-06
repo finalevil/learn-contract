@@ -19,13 +19,4 @@ contract TestTokenUpgradeable is OwnableUpgradeable, ERC20CappedUpgradeable {
     function mint(address to, uint256 amount) external onlyOwner {
         _mint(to, amount);
     }
-
-    // function transfer(
-    //     address from,
-    //     address to,
-    //     uint256 amount
-    // ) public {
-    //     _transfer(from, to, amount);
-    //     // _balances[address]
-    // }
 }
