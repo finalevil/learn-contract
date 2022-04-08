@@ -1,3 +1,73 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    }
+  },
+  "globals": {
+    "__DEV__": true,
+    "__SERVER__": true,
+    "jest": true,
+    "expect": true
+  },
+  "plugins": ["react"],
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // quality
+    "no-undef": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "quote-props": ["error", "as-needed"],
+    "quotes": ["error", "single"],
+    "template-curly-spacing": ["error", "never"],
+    "no-dupe-class-members": "error",
+    "no-unreachable": "error",
+    "dot-notation": "error",
+    "no-nested-ternary": "error",
+    "no-unneeded-ternary": "error",
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+
+    // style
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "key-spacing": ["warn", { "afterColon": true }],
+    "space-before-blocks": ["warn", "always"],
+    "camelcase": "off",
+    "no-unexpected-multiline": "error",
+    "semi": ["warn", "never"],
+    "no-unused-expressions": "off",
+    "no-underscore-dangle": "off",
+    "space-infix-ops": "warn",
+    "comma-dangle": ["error", "always-multiline"],
+
+    // should be error when all fixed
+    "no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_", "args": "after-used" }
+    ],
+    "no-param-reassign": "warn",
+
+    // react
+    "react/display-name": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-indent": ["warn", 2],
+    "react/jsx-key": "error",
+    "react/no-find-dom-node": "off",
+    "react/jsx-tag-spacing": 1,
+    "react/jsx-equals-spacing": ["error", "never"],
+    "react/self-closing-comp": "warn"
+    // "react/jsx-closing-bracket-location": ["warn", "after-props"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
