@@ -2,15 +2,21 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "solidity.formatter": "prettier", // This is the default so it might be missing.
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[solidity]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
   },
   "prettier.singleQuote": false
 }
