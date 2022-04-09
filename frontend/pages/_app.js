@@ -5,7 +5,7 @@ import config from './config'
 function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider appId={config.morailsAppId} serverUrl={config.morailsServerUrl}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </MoralisProvider>
   )
 }
